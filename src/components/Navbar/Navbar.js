@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className="bg-none">
+        <div className="bg-white bg-fixed">
             <div className="container mx-auto navbar">
                 <div className="flex-1 logo">
                     <Link to={'/'} className="btn btn-ghost btn-outline normal-case text-xl"> <img className='h-24' src={logo} alt="" /> Quiz Time</Link>

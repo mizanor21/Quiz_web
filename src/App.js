@@ -13,7 +13,9 @@ function App() {
       children: ([
         {
           path: '/topics',
+
           element: <Topics></Topics>
+
         },
         {
           path: '/statistics',

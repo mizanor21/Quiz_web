@@ -1,4 +1,8 @@
 .footer {
     position: absolute;
     bottom: 0px;
+    background-image: url('../../assets/img/footer-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
