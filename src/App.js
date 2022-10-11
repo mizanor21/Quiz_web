@@ -10,11 +10,11 @@ function App() {
     {
       path: '/',
       element: <Main></Main>,
-      children: ([
+      children: [
         {
-          path: '/topics',
-
-          element: <Topics></Topics>
+          path: '/',
+          loader: () => fetch('topics.json'),
+          element: <Topics></Topics>,
 
         },
         {
@@ -25,11 +25,9 @@ function App() {
           path: '/blog',
           element: <Blog></Blog>
         }
-      ])
+      ]
 
-    }
-
-  ]);
+    }]);
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
