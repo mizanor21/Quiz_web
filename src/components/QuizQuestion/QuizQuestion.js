@@ -1,11 +1,20 @@
 import React from 'react';
+import Option from '../Option/Option';
 
-const QuizQuestion = ({ quizQuestion }) => {
+const QuizQuestion = ({ quizQuestion, iD }) => {
     console.log(quizQuestion);
     const { id, question, options, correctAnswer } = quizQuestion;
+    // console.log(options);
     return (
         <div>
-            <h2>Quiz {id}: {question}</h2>
+            <div className="bg-gradient-to-r from-indigo-300 via-purple-400 to-pink-300 text-lg shadow-2xl container mx-auto m-4 p-4 rounded-lg lg:w-1/2">
+                <h2 className='pb-3 text-xl font-bold'>Quiz {iD}: {question}</h2>
+                <div className="option-container  grid grid-cols-2 gap-3 ">
+                    {
+                        options.map(option => <Option key={option?.id} option={option}></Option>)
+                    }
+                </div>
+            </div>
         </div>
     );
 };
