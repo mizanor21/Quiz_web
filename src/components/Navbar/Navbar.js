@@ -12,7 +12,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal p-0 text-xl font-bold">
-                        <li className='navItems rounded-lg'><Link to={'/'}>Topics</Link></li>
+                        <li className='navItems rounded-lg'><Link to={'/topics'}>Topics</Link></li>
                         <li className='navItems rounded-lg'><Link to={'/statistics'}>Statistics</Link></li>
                         <li className='navItems rounded-lg'><Link to={'/blog'}>Blog</Link></li>
                     </ul>
