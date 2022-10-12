@@ -9,7 +9,7 @@ const Header = () => {
             <div className="container bg-slate-100 mx-auto rounded-box mt-5 justify-center items-center md:flex">
 
                 <div className="text-4xl font-extrabold m-4 ">
-                    <h1 className='text-yellow-400'>Don't think just <span className='italic hover:not-italic text-green-700'><br /> do it...</span></h1>
+                    <h1 className='text-yellow-400'>Don't think, <span className='italic hover:not-italic text-green-700'><br />just do it...</span></h1>
                 </div>
                 <div className="">
                     <img src={banner2} alt="Burger" />
