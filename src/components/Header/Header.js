@@ -1,23 +1,18 @@
 import React from 'react';
 import './Header.css';
-import banner1 from '../../assets/img/banner1.jpg'
 import banner2 from '../../assets/img/banner2.png'
-import banner3 from '../../assets/img/banner3.png'
 
 
 const Header = () => {
     return (
         <div>
-            <div className="carousel container mx-auto rounded-box mt-5">
-                <div className="carousel-item">
-                    <img className='container mx-auto' src={banner1} alt="Burger" />
-                </div>
+            <div className="container bg-slate-100 mx-auto rounded-box mt-5 justify-center items-center md:flex">
 
-                <div className="carousel-item">
-                    <img src={banner2} alt="Burger" />
+                <div className="text-4xl font-extrabold m-4 ">
+                    <h1 className='text-yellow-400'>Don't think just <span className='italic hover:not-italic text-green-700'><br /> do it...</span></h1>
                 </div>
-                <div className="carousel-item">
-                    <img src={banner3} alt="Burger" />
+                <div className="">
+                    <img src={banner2} alt="Burger" />
                 </div>
 
             </div>
