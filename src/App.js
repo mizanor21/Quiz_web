@@ -24,14 +24,6 @@ function App() {
           element: <Topics></Topics>,
 
         },
-        // {
-        //   path: '/topics',
-        //   loader: async () => {
-        //     return fetch('https://openapi.programming-hero.com/api/quiz')
-        //   },
-
-
-        // },
         {
           path: '/topic/:topicId',
           loader: async ({ params }) => {
@@ -41,6 +33,7 @@ function App() {
         },
         {
           path: '/statistics',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Statistics></Statistics>
         },
         {
